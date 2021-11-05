@@ -5,9 +5,12 @@ import (
 	"go-study/ch2/tempconv"
 	"os"
 	"strconv"
+	"unsafe"
 )
 
 func main() {
+	var x int64
+	fmt.Println(unsafe.Sizeof(x))
 
 	for _, arg := range os.Args[1:] {
 		t, err := strconv.ParseFloat(arg, 64)
