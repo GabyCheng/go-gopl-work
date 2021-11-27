@@ -15,8 +15,8 @@ var (
 	n = flag.Int("n", 100, "")
 )
 
-// fetch: go run main.go -f -n=100 > in.json
-// search: cat in.json | go run main.go keywords
+// fetch: go run format.go -f -n=100 > in.json
+// search: cat in.json | go run format.go keywords
 func main() {
 	flag.Parse()
 	if *f {
